@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabel Nama dan Usia</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .content {
+      flex: 1; /* mendorong footer ke bawah */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 70%;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    th {
+      background-color: green;
+      color: white;
+      padding: 10px;
+      border: 1px solid #555;
+    }
+
+    th:last-child {
+      background-color: orange;
+    }
+
+    td {
+      border: 1px solid #555;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover td {
+      background-color: #00ccff;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .deskripsi {
+      text-align: center;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    /* Foto di bawah tabel */
+    .foto {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .foto img {
+      width: 300px; /* bisa diubah sesuai kebutuhan */
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Navigasi bawah full-width */
+    .nav-links {
+        text-align: center;
+        background-color: #2c3e50;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .nav-links a {
+        margin: 0 25px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        color: #ecf0f1;
+        position: relative;
+        padding: 8px 12px;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background: #f39c12;
+        transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+        width: 100%;
+    }
+
+    .nav-links a:hover {
+        color: #f39c12;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <table>
+      <caption>Tabel Nama dan Usia</caption>
+      <tr>
+        <th colspan="2">Nama</th>
+        <th>Umur</th>
+      </tr>
+      <tr>
+        <td>Latifa</td><td>Nur A.</td><td>16</td>
+      </tr>
+      <tr>
+        <td>Vitto</td><td>Aurelio S.</td><td>18</td>
+      </tr>
+      <tr>
+        <td>Fla</td><td>Chalya A.</td><td>14</td>
+      </tr>
+      <tr>
+        <td>Atma</td><td>Satya N.</td><td>11</td>
+      </tr>
+      <tr>
+        <td>Lyandra</td><td>Adhyatma W.</td><td>15</td>
+      </tr>
+    </table>
+
+    
+    <div class="foto">
+      <img src="https://i.pinimg.com/1200x/5b/63/85/5b63853da93f72554033ef2c52748378.jpg" alt="lucu">
+    </div>
+  </div>
+
+  <!-- Navigasi bawah sticky -->
+  <div class="nav-links">
+      <a href="index.html">🏠 Home</a>
+      <a href="Tugas_Biodata_Liliana.html">👤BIODATA</a>
+      <a href="Tugas_Tabel_Liliana.html">📊 Tabel</a>
+      <a href="Tugas_Multimedia_Liliana/Lagu_Liliana_17.html">🎵 Multimedia</a>
+  </div>
+
+</body>
+</html>

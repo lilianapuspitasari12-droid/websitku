@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Siswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e3e9db;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        h2, h3 {
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .header {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .content {
+            margin-top: 30px;
+        }
+
+        .content ol {
+            padding-left: 20px;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        .signature {
+            text-align: right;
+            margin-top: 50px;
+        }
+
+        .lampiran {
+            margin-top: 30px;
+        }
+
+        .tebal {
+            height: 3px;
+            background-color: black;
+            border: none;
+        }
+
+        /* Navigasi bawah selalu terlihat */
+        .nav-links {
+            text-align: center;
+            background-color: #2c3e50;
+            padding: 15px 0;
+            width: 100%;
+            position: sticky; /* mengikuti scroll */
+            bottom: 0;
+            z-index: 1000;
+        }
+
+        .nav-links a {
+            margin: 0 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            color: #ecf0f1;
+            position: relative;
+            padding: 8px 12px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: #f39c12;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-content">
+        <div class="header">
+            <div>PEMERINTAH PROVINSI JAWA TENGAH</div>
+            <div>DINAS PENDIDIKAN DAN KEBUDAYAAN</div>
+            <div><strong>SMK NEGERI 5 SURAKARTA</strong></div>
+            <div>Jalan L.U Adi Sucipto Nomor 42 Laweyan Surakarta Kode Pos : 57143</div>
+        </div>
+
+        <hr class="tebal">
+
+        <h2>BIODATA SISWA</h2>
+        <h3>TAHUN AJARAN 2025/2026</h3>
+        <p><strong>No : 449/191</strong></p>
+        <p><strong>Hal: Biodata Siswa</strong></p><br>
+
+        <div class="content">
+            <p>Berikut adalah siswa kelas XI RPL A, dengan data diri sebagai berikut:</p>
+            <ol>
+                <li><b>Nama Lengkap :</b> Liliana Puspitasari</li>
+                <li><b>Nama Panggilan :</b> Lili</li>
+                <li><b>Jenis Kelamin :</b> <s>Laki-Laki</s> / Perempuan</li>
+                <li><b>Alamat Lengkap :</b> Blimbing RT 01/RW 07, Luwang, Gatak, Sukoharjo</li>
+                <li><b>Tempat, Tanggal Lahir :</b> Boyolali, 24 April 2009</li>
+                <li><b>Nomor Telp :</b> 085868550806</li>
+                <li><b>Email :</b> liliana.satya@gmail.com</li>
+                <li><b>Asal Sekolah :</b> SMP Negeri 2 Gatak Sukoharjo</li>
+                <li><b>Nama Orang Tua/Wali :</b> Putri Dwi Endrayanti</li>
+                <li><b>Pekerjaan Orang Tua/Wali :</b> Ibu rumah tangga</li>
+                <li><b>Alamat Orang Tua/Wali :</b> Blimbing RT 01/RW 07, Luwang, Gatak, Sukoharjo</li>
+                <li><b>Nomor Telp Orang Tua/Wali :</b> 085601440855</li>
+                <li><b>Anak ke - :</b> 1 / pertama</li>
+                <li><b>Jumlah Saudara :</b> 3 Bersaudara</li>
+                <li><b>Hobby :</b> Membaca Novel</li>
+            </ol>
+
+            <p>
+                Demikian Biodata ini saya buat, untuk dipergunakan sebagaimana mestinya dan
+                <span class="highlight">data-data yang saya tuliskan sudah berdasarkan keadaan aslinya yang diperkuat oleh dokumen yang saya lampirkan.</span>
+            </p>
+
+            <div class="signature">
+                <p>Siswa SMKN 5,</p>
+                <br><br>
+                <p>Liliana Puspitasari</p>
+            </div>
+
+            <div class="lampiran">
+                <p><strong>Lampiran:</strong></p>
+                <ol>
+                    <li>Fotocopy Ijazah SMP</li>
+                    <li>Fotocopy Akta Kelahiran</li>
+                    <li>Fotocopy Kartu Keluarga</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigasi bawah sticky -->
+    <div class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="Tugas_Biodata_Liliana.html">👤BIODATA</a>
+        <a href="Tugas_Tabel_Liliana.html">📊 Tabel</a>
+        <a href="Tugas_Multimedia_Liliana/Lagu_Liliana_17.html">🎵 Multimedia</a>
+    </div>
+
+</body>
+</html>

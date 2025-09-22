@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lagu dan Video</title>
+  <style>
+    /* Layout Flex untuk sticky footer */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+    }
+
+    img {
+      margin: 10px;
+    }
+    .logo {
+      width: 180px;
+    }
+    .foto {
+      width: 150px;
+      border-radius: 10px;
+    }
+    .deskripsi {
+      font-size: 16px;
+      color: #f39c12; /* ubah hijau jadi emas */
+      margin: 10px auto 30px;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+    .audio-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 20px auto;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .audio-item {
+      text-align: center;
+      min-width: 200px;
+    }
+    .audio-single {
+      margin: 20px auto;
+      width: 400px;
+      text-align: center;
+    }
+    audio {
+      margin: 10px auto;
+      width: 100%;
+    }
+    video {
+      margin: 20px auto 40px;
+      width: 400px;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+    }
+
+    /* Navigasi bawah full width, sticky */
+    .nav-links {
+      text-align: center;
+      background: #2c3e50;
+      padding: 15px 0;
+      width: 100%;
+      position: sticky; /* atau bisa fixed jika selalu di layar */
+      bottom: 0;
+    }
+
+    .nav-links a {
+      margin: 0 25px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      color: #ecf0f1;
+      position: relative;
+      padding: 8px 12px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background: #f39c12;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-links a:hover {
+      color: #f39c12;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <!-- Logo & Deskripsi -->
+    <img src="logosmk.png" alt="Logo" class="logo" /><br />
+    <img src="WhatsApp Image 2025-09-07 at 18.53.55.jpeg" alt="Foto Liliana" class="foto" />
+    <p><strong>Liliana</strong></p>
+    <p class="deskripsi">
+      Nama saya <strong>Liliana Puspitasari</strong>, saya berumur 16 tahun.  
+      Saya salah satu murid di <strong>SMKN 5 Surakarta</strong> kelas 11 jurusan <strong>RPL</strong>.
+    </p>
+
+    <!-- Lagu -->
+    <h3>LAGUKU</h3>
+    <div class="audio-container">
+      <div class="audio-item">
+        <p>1. Bunga Terakhir</p>
+        <audio controls>
+          <source src="Iwan Fals x Isyana Sarasvati - Bunga Terakhir.mp3" type="audio/mpeg" />
+          Browsermu tidak mendukung audio.
+        </audio>
+      </div>
+      <div class="audio-item">
+        <p>2. Kenangan Terindah</p>
+        <audio controls>
+          <source src="SAMSONS - Kenangan Terindah.mp3" type="audio/mpeg" />
+          Browsermu tidak mendukung audio.
+        </audio>
+      </div>
+    </div>
+
+    <div class="audio-single">
+      <p>3. Rela</p>
+      <audio controls>
+        <source src="Shanna Shannon - Rela.mp3" type="audio/mpeg" />
+        Browsermu tidak mendukung audio.
+      </audio>
+    </div>
+
+    <!-- Video -->
+    <h3>Gala Bunga Matahari Video</h3>
+    <video controls>
+      <source src="Lirik lagu GALA BUNGA MATAHARI.mp4" type="video/mp4" />
+      Browsermu tidak mendukung video.
+    </video>
+  </main>
+
+  <!-- Navigasi bawah sticky -->
+    <div class="nav-links">
+        <a href="../index.html">🏠 Home</a>
+        <a href="../Tugas_Biodata_Liliana.html">👤BIODATA</a>
+        <a href="../Tugas_Tabel_Liliana.html">📊 Tabel</a>
+        <a href="./Lagu_Liliana_17.html">🎵 Multimedia</a>
+    </div>
+
+
+</body>
+</html>
